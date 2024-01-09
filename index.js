@@ -18,7 +18,7 @@ const CRX_PATH = "tampermonkey_stable";
       `--disable-extensions-except=${CRX_PATH}`,
       `--load-extension=${CRX_PATH}`,
     ],
-    ignoreDefaultArgs: ["--disable-extensions"],
+    ignoreDefaultArgs: ["--disable-extensions", "--enable-automation"],
     userDataDir: "./profile",
   });
 
