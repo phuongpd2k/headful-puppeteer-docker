@@ -17,6 +17,7 @@ const CRX_PATH = "tampermonkey_stable";
       "--disable-features=IsolateOrigins,site-per-process",
       `--disable-extensions-except=${CRX_PATH}`,
       `--load-extension=${CRX_PATH}`,
+      "--window-size=1920,1080",
     ],
     ignoreDefaultArgs: ["--disable-extensions", "--enable-automation"],
     userDataDir: "./profile",

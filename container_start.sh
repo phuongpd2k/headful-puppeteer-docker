@@ -11,7 +11,7 @@ trap cleanup EXIT
 echo "starting X server and VNC display"
 
 touch ~/.Xauthority
-Xvfb :1 -screen 0 1024x768x24 -noreset & 
+Xvfb :1 -screen 0 1920x1080x24 -noreset & 
 sleep 5
 /usr/bin/x11vnc -display :1.0 -usepw -quiet -forever & 
 export DISPLAY=:1.0 
