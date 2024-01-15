@@ -22,4 +22,20 @@
     return { title: title, link: link, description: desc };
   });
   console.log(results);
+
+  //Close tab
+  window.close();
+  //Send results to server using fetch
+
+  // const url = "http://localhost:3000/results";
+  // fetch(url, {
+  //   method: "POST",
+  //   body: JSON.stringify(results),
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  // })
+  //   .then((res) => res.text())
+  //   .then((response) => console.log("Success:", response))
+  //   .catch((error) => console.error("Error:", error));
 })();
