@@ -6,7 +6,7 @@ After piecing together a few different resources, I decided to create a quick de
 
 ## Installation
 
-You will need to have  [`Docker`](https://docs.docker.com/get-docker/) installed to use this.
+You will need to have [`Docker`](https://docs.docker.com/get-docker/) installed to use this.
 
 ## Docker
 
@@ -16,10 +16,12 @@ Build with:
 
 Run with:
 
-`$ docker run -p 5900:5900 headful-puppeteer-docker`
+`$ docker run -p 5900:5900 -p 3000:3000 headful-puppeteer-docker`
 
 Stop with:
 
 `$ docker stop headful-puppeteer-docker`
 
+## API
 
+`$curl --location '192.168.215.2:3000/open-page?targetUrl=example.com`
