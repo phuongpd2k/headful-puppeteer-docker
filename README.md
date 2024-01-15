@@ -24,4 +24,4 @@ Stop with:
 
 ## API
 
-`$ curl --location '192.168.215.2:3000/open-page?targetUrl=example.com`
+`$ curl --location 'http://localhost:3000/open-page?targetUrl=example.com`
