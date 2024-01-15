@@ -36,6 +36,7 @@ RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
 
 # Expose default port for VNC server
 EXPOSE 5900
+EXPOSE 3000
 
 WORKDIR /app
 
