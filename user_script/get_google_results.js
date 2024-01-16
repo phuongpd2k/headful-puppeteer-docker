@@ -15,16 +15,22 @@
   if (!elements) {
     console.log("No sponsored results");
   }
-  const results = Array.from(elements).map((e) => {
+  const sponsoredPost = Array.from(elements).map((e) => {
     const title = e.querySelector(".CCgQ5")?.innerText;
     const link = e.querySelector(".sVXRqc")?.href;
     const desc = e.querySelector(".Va3FIb.r025kc.lVm3ye")?.innerText;
     return { title: title, link: link, description: desc };
   });
+  const searchParams = new URLSearchParams(window.location.search);
+  const results = {
+    keyword: searchParams.get("q"),
+    results: sponsoredPost,
+  };
   console.log(results);
 
   //Close tab
   window.close();
+
   //Send results to server using fetch
 
   // const url = "http://localhost:3000/results";
