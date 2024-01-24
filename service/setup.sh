@@ -1,5 +1,5 @@
 #Move the service file to the systemd folder
-sudo cp headful-puppeteer-docker.service /etc/systemd/system/
+sudo cp service/headful-puppeteer-docker.service /etc/systemd/system/
 
 #Reload the systemd daemon
 sudo systemctl daemon-reload
