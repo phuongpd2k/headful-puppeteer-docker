@@ -22,30 +22,6 @@ Stop with:
 
 `$ docker stop headful-puppeteer-container`
 
-## Service (For Ubuntu)
-
-Setup service for your VM:(Must inside source repo: /headful-puppeteer-docker)
-
-`$ chmod +x ./service/setup.sh`
-
-`$ sh ./service/setup.sh`
-
-Check service status with:
-
-`$ sudo systemctl status headful-puppeteer-docker`
-
-Start service with:
-
-`$ sudo systemctl start headful-puppeteer-docker`
-
-Stop service with:
-
-`$ sudo systemctl stop headful-puppeteer-docker`
-
-Restart service with:
-
-`sudo systemctl restart headful-puppeteer-docker`
-
 ## API
 
 `$ curl --location 'http://localhost:3000/open-page?targetUrl=example.com`
